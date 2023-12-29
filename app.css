@@ -1,14 +1,50 @@
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 h1{
     color : black;
 }
 body{
-    background: no-repeat url(IMG_1786.JPEG);
+    /*background: no-repeat url(IMG_1786.JPEG);*/
     background-size: 672px 504px;
     background-position: 50% -10%;
     background-color: pink;
     overflow: scroll;
 
 }
+
 p{
     font-family: arial;
     font-weight:lighter;
@@ -30,3 +66,4 @@ button:hover{
     font-size: 14px;
     transition: 0.3s;
 }
+

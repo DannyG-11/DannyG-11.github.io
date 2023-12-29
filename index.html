@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="app.css"/>
         <link rel="icon" href="PoppyIcon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2
+        ?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <title>Sara's Website</title>
+
     </head>
 
     <body>
         <h1>Sara Ellacott</h1>
-        <p>Relevant Accomplishments:</p>
-        <button onClick="showContent1()">Accomplishment 1</button>
-        <button onClick="showContent2()">Accomplishment 2</button>
-        <button onClick="showContent3()">Online Resume View</button>
-        <button type="submit" onClick="window.open('https://i.kym-cdn.com/photos/images/newsfeed/002/307/559/158.jpg')">Silly cat</button>
-        <br>
-        <br>
-        <br>
-        <p>Recent Field Studies</p>
-        <button onClick="showContent4()">Dirt Analysis</button>
-        <button onClick="showContent5()">Trash in Water Idk</button>
-        <button onClick="showContent6()">Tree measuring</button>
+        <ul class="tabs">
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#accomplishments" class="tab">Relevant Accomplishments</li>
+            <li data-tab-target="#fieldwork" class="tab">Field Work</li>
+            <li data-tab-target="#resume" class="tab">Resume</li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" data-tab-content class="active">
+                <h1>Home</h1>
+                <p>For you to write a little description of yourself</p>
+            </div>
+            <div id="accomplishments" data-tab-content>
+                <h1>Relevant Accomplishments</h1>
+                <p>Relevant Accomplishments:</p>
+                <button onClick="showContent1()">Accomplishment 1</button>
+                <button onClick="showContent2()">Accomplishment 2</button>
+                <button onClick="showContent3()">Online Resume View</button>
+                <button type="submit" onClick="window.open('https://i.kym-cdn.com/photos/images/newsfeed/002/307/559/158.jpg')">Silly cat</button>
+            </div>
+            <div id="fieldwork" data-tab-content>
+                <h1>Field Work</h1>
+                <p>Recent Field Studies</p>
+                <button onClick="showContent4()">Dirt Analysis</button>
+                <button onClick="showContent5()">Trash in Water Idk</button>
+                <button onClick="showContent6()">Tree measuring</button>
+            </div>
+            <div id="resume" data-tab-content>
+                <h1>Resume</h1>
+                <p>Resume page</p>
+            </div>
+        </div>
+    <!-- <p>Accomplishments Page</p> //-->
+
+    <!-- Back to top button //-->
+        <a href="#">
+            <span class="material-symbols-outlined">
+                &#xe316
+                </span>
+        </a>
+
 
     </body>
 
