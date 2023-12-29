@@ -5,6 +5,7 @@ body{
     background: no-repeat url(IMG_1786.JPEG);
     background-size: 672px 504px;
     background-position: 50% -10%;
+    background-color: pink;
     overflow: scroll;
 
 }
