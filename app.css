@@ -67,3 +67,97 @@ button:hover{
     transition: 0.3s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.backtotop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dc143c;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: top 0.2s ease-out;
+}
+
+.backtotop span {
+    color: #fff;
+    font-size: 2rem;
+    transition: top 0.2s ease-out;
+}
+
+.backtotop:hover {
+    background-color: #be1a3b;
+}
+.backtotop:hover span {
+    transform: translateY(-0.1rem);
+}
+
+/* Start of Field Work specific */
+.fw1-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.image-container img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.image-container {
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    max-width: 175px;
+}
+
+.image-container p {
+    margin-top: 5px;
+}
+
+.image-container-fw1-2 img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.image-container-fw1-2 {
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    max-width: 150px;
+    flex: 1;
+    box-sizing: border-box;
+    
+}
+
+.image-container-fw1-2 p {
+    margin-top: 5px;
+}
+
+#fw1 {
+    text-align: center;
+}
+
+#fw1 h2 {
+    margin-bottom: 20px;
+}
+
+.fw1-1 p {
+    margin-top: 5px;
+    font-size: 15px;
+}

@@ -20,8 +20,8 @@ function showContent6(){
 
 // Tabs start
 
-const tabs = document.querySelectorAll('[data-tab-target')
-const tabContents = document.querySelectorAll('[data-tab-content')
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
