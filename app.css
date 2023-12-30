@@ -98,21 +98,21 @@ html {
 }
 
 /* Start of Field Work specific */
-.fw1-1 {
+.fw1-1, .fw1-2, .fw2-1 {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-direction: row;
 }
 
-.image-container img {
+.image-container-fw1 img {
     height: 200px;
     width: auto;
     object-fit: contain;
     margin-bottom: 5px;
 }
 
-.image-container {
+.image-container-fw1 {
     text-align: center;
     margin-right: 10px;
     display: flex;
@@ -121,7 +121,7 @@ html {
     max-width: 175px;
 }
 
-.image-container p {
+.image-container-fw1 p {
     margin-top: 5px;
 }
 
@@ -145,19 +145,39 @@ html {
     
 }
 
-.image-container-fw1-2 p {
+.image-container-fw1-2 p, .image-container-fw2 p {
     margin-top: 5px;
 }
 
-#fw1 {
+#fw1, #fw2 {
     text-align: center;
 }
 
-#fw1 h2 {
+#fw1 h2, #fw2 h2 {
     margin-bottom: 20px;
 }
 
-.fw1-1 p {
+.fw1-1 p, .fw2-1 p {
     margin-top: 5px;
     font-size: 15px;
+}
+
+.image-container-fw2 img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.image-container-fw2 {
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.image-container-fw2 p {
+    margin-top: 5px;
 }
